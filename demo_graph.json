@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "id": "person:王承泽/课堂站站主",
+      "type": "person",
+      "label": "王承泽/课堂站站主",
+      "props": {}
+    },
+    {
+      "id": "acct:GitHub:claudepnlueilwiuqa14-netizen",
+      "type": "account",
+      "label": "GitHub",
+      "props": {
+        "url": "https://api.github.com/users/claudepnlueilwiuqa14-netizen",
+        "evidence": "字段 login=claudepnlueilwiuqa14-netizen",
+        "http": 200
+      }
+    },
+    {
+      "id": "email:claudepnlueilwiuqa14-netizen@users.noreply.github.com",
+      "type": "email",
+      "label": "claudepnlueilwiuqa14-netizen@users.noreply.github.com",
+      "props": {
+        "kind": "企业/自建域名邮箱",
+        "gravatar": false,
+        "risk": "低"
+      }
+    },
+    {
+      "id": "domain:users.noreply.github.com",
+      "type": "domain",
+      "label": "users.noreply.github.com",
+      "props": {}
+    },
+    {
+      "id": "phone:13800138000",
+      "type": "phone",
+      "label": "+8613800138000",
+      "props": {
+        "carrier": "中国移动",
+        "country": "中国",
+        "card_type": "实名个人号",
+        "risk": "低"
+      }
+    },
+    {
+      "id": "domain:wenzetongxun.com",
+      "type": "domain",
+      "label": "wenzetongxun.com",
+      "props": {
+        "registrar": "Spaceship",
+        "created": "2026-09-24T10:38:29Z",
+        "expires": "2027-09-24T10:38:29Z",
+        "wildcard": true
+      }
+    },
+    {
+      "id": "ip:138.3.210.223",
+      "type": "ip",
+      "label": "138.3.210.223",
+      "props": {}
+    },
+    {
+      "id": "ns:launch1.spaceship.net",
+      "type": "ns",
+      "label": "launch1.spaceship.net",
+      "props": {}
+    },
+    {
+      "id": "ns:launch2.spaceship.net",
+      "type": "ns",
+      "label": "launch2.spaceship.net",
+      "props": {}
+    }
+  ],
+  "edges": [
+    {
+      "from": "person:王承泽/课堂站站主",
+      "to": "acct:GitHub:claudepnlueilwiuqa14-netizen",
+      "rel": "has_account",
+      "label": "注册/使用",
+      "weight": 1
+    },
+    {
+      "from": "person:王承泽/课堂站站主",
+      "to": "email:claudepnlueilwiuqa14-netizen@users.noreply.github.com",
+      "rel": "has_email",
+      "label": "邮箱",
+      "weight": 1
+    },
+    {
+      "from": "email:claudepnlueilwiuqa14-netizen@users.noreply.github.com",
+      "to": "domain:users.noreply.github.com",
+      "rel": "email_at",
+      "label": "邮箱属于域名",
+      "weight": 1
+    },
+    {
+      "from": "person:王承泽/课堂站站主",
+      "to": "phone:13800138000",
+      "rel": "has_phone",
+      "label": "号码",
+      "weight": 1
+    },
+    {
+      "from": "person:王承泽/课堂站站主",
+      "to": "domain:wenzetongxun.com",
+      "rel": "owns_domain",
+      "label": "持有域名",
+      "weight": 1
+    },
+    {
+      "from": "domain:wenzetongxun.com",
+      "to": "ip:138.3.210.223",
+      "rel": "domain_ip",
+      "label": "解析到",
+      "weight": 1
+    },
+    {
+      "from": "domain:wenzetongxun.com",
+      "to": "ns:launch1.spaceship.net",
+      "rel": "domain_ns",
+      "label": "权威DNS",
+      "weight": 1
+    },
+    {
+      "from": "domain:wenzetongxun.com",
+      "to": "ns:launch2.spaceship.net",
+      "rel": "domain_ns",
+      "label": "权威DNS",
+      "weight": 1
+    }
+  ],
+  "stats": {
+    "nodes": 9,
+    "edges": 8,
+    "by_type": {
+      "person": 1,
+      "account": 1,
+      "email": 1,
+      "domain": 2,
+      "phone": 1,
+      "ip": 1,
+      "ns": 2,
+      "subdomain": 0
+    }
+  }
+}
