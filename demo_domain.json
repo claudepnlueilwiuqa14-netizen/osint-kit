@@ -1,0 +1,43 @@
+{
+  "domain": "wenzetongxun.com",
+  "ip": "198.18.0.208",
+  "dns": {
+    "A": [
+      "138.3.210.223"
+    ],
+    "AAAA": [],
+    "MX": [],
+    "NS": [
+      "launch2.spaceship.net",
+      "launch1.spaceship.net"
+    ],
+    "TXT": [],
+    "_resolver": null,
+    "spf": null,
+    "dmarc": [],
+    "nxdomain": false
+  },
+  "whois": {
+    "ok": true,
+    "source": "https://rdap.org/domain/",
+    "registrar": "3862",
+    "created": "2026-09-24T10:38:29Z",
+    "expires": "2027-09-24T10:38:29Z",
+    "status": [
+      "client transfer prohibited"
+    ],
+    "nameservers": [
+      "LAUNCH1.SPACESHIP.NET",
+      "LAUNCH2.SPACESHIP.NET"
+    ],
+    "error": null
+  },
+  "ip_info": {
+    "input": "198.18.0.208",
+    "ip": "198.18.0.208",
+    "ok": false,
+    "ptr": []
+  },
+  "wildcard_dns": true,
+  "subdomains_alive": []
+}
