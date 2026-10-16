@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>OSINT 演示图谱 · 王承泽/课堂站站主</title><style>
+body{margin:0;background:#0b0d12;color:#e6e9ef;font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#hdr{padding:14px 20px;border-bottom:1px solid #232733;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+#hdr h1{font-size:16px;margin:0;font-weight:600}
+.lg{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#9aa4b2;margin-right:12px}
+.lg i{width:10px;height:10px;border-radius:50%;display:inline-block}
+svg{display:block;background:#0b0d12}
+.nlab{font-size:11px;fill:#dfe4ec;pointer-events:none;text-anchor:middle}
+.elab{font-size:9px;fill:#7f8a9c}
+#tip{position:fixed;background:#161a23;border:1px solid #2c3140;padding:8px 10px;border-radius:6px;
+font-size:12px;max-width:320px;display:none;z-index:9;line-height:1.5}
+#stat{padding:10px 20px;font-size:12px;color:#8b95a6}
+</style></head><body>
+<div id="hdr"><h1>OSINT 演示图谱 · 王承泽/课堂站站主</h1><div id="lgd"><span class="lg"><i style="background:#ff6b6b"></i>人物</span><span class="lg"><i style="background:#4ecdc4"></i>社交账号</span><span class="lg"><i style="background:#ffd93d"></i>邮箱</span><span class="lg"><i style="background:#6c5ce7"></i>域名</span><span class="lg"><i style="background:#00b894"></i>号码</span><span class="lg"><i style="background:#fd79a8"></i>IP</span><span class="lg"><i style="background:#a29bfe"></i>DNS服务器</span><span class="lg"><i style="background:#b2bec3"></i>子域</span></div></div>
+<div id="stat"></div><svg id="cv" width="1200" height="760"></svg><div id="tip"></div>
+<script>
+const D = {"nodes": [{"id": "person:王承泽/课堂站站主", "type": "person", "label": "王承泽/课堂站站主", "props": {}}, {"id": "acct:GitHub:claudepnlueilwiuqa14-netizen", "type": "account", "label": "GitHub", "props": {"url": "https://api.github.com/users/claudepnlueilwiuqa14-netizen", "evidence": "字段 login=claudepnlueilwiuqa14-netizen", "http": 200}}, {"id": "email:claudepnlueilwiuqa14-netizen@users.noreply.github.com", "type": "email", "label": "claudepnlueilwiuqa14-netizen@users.noreply.github.com", "props": {"kind": "企业/自建域名邮箱", "gravatar": false, "risk": "低"}}, {"id": "domain:users.noreply.github.com", "type": "domain", "label": "users.noreply.github.com", "props": {}}, {"id": "phone:13800138000", "type": "phone", "label": "+8613800138000", "props": {"carrier": "中国移动", "country": "中国", "card_type": "实名个人号", "risk": "低"}}, {"id": "domain:wenzetongxun.com", "type": "domain", "label": "wenzetongxun.com", "props": {"registrar": "Spaceship", "created": "2026-09-24T10:38:29Z", "expires": "2027-09-24T10:38:29Z", "wildcard": true}}, {"id": "ip:138.3.210.223", "type": "ip", "label": "138.3.210.223", "props": {}}, {"id": "ns:launch1.spaceship.net", "type": "ns", "label": "launch1.spaceship.net", "props": {}}, {"id": "ns:launch2.spaceship.net", "type": "ns", "label": "launch2.spaceship.net", "props": {}}], "edges": [{"from": "person:王承泽/课堂站站主", "to": "acct:GitHub:claudepnlueilwiuqa14-netizen", "rel": "has_account", "label": "注册/使用", "weight": 1}, {"from": "person:王承泽/课堂站站主", "to": "email:claudepnlueilwiuqa14-netizen@users.noreply.github.com", "rel": "has_email", "label": "邮箱", "weight": 1}, {"from": "email:claudepnlueilwiuqa14-netizen@users.noreply.github.com", "to": "domain:users.noreply.github.com", "rel": "email_at", "label": "邮箱属于域名", "weight": 1}, {"from": "person:王承泽/课堂站站主", "to": "phone:13800138000", "rel": "has_phone", "label": "号码", "weight": 1}, {"from": "person:王承泽/课堂站站主", "to": "domain:wenzetongxun.com", "rel": "owns_domain", "label": "持有域名", "weight": 1}, {"from": "domain:wenzetongxun.com", "to": "ip:138.3.210.223", "rel": "domain_ip", "label": "解析到", "weight": 1}, {"from": "domain:wenzetongxun.com", "to": "ns:launch1.spaceship.net", "rel": "domain_ns", "label": "权威DNS", "weight": 1}, {"from": "domain:wenzetongxun.com", "to": "ns:launch2.spaceship.net", "rel": "domain_ns", "label": "权威DNS", "weight": 1}], "stats": {"nodes": 9, "edges": 8, "by_type": {"person": 1, "account": 1, "email": 1, "domain": 2, "phone": 1, "ip": 1, "ns": 2, "subdomain": 0}}};
+const ST = {"person": {"color": "#ff6b6b", "r": 26, "label": "人物"}, "account": {"color": "#4ecdc4", "r": 18, "label": "社交账号"}, "email": {"color": "#ffd93d", "r": 20, "label": "邮箱"}, "domain": {"color": "#6c5ce7", "r": 22, "label": "域名"}, "phone": {"color": "#00b894", "r": 20, "label": "号码"}, "ip": {"color": "#fd79a8", "r": 18, "label": "IP"}, "ns": {"color": "#a29bfe", "r": 14, "label": "DNS服务器"}, "subdomain": {"color": "#b2bec3", "r": 13, "label": "子域"}};
+const W=1200,H=760, nodes=D.nodes.map((n,i)=>({...n,x:W/2+Math.cos(i)*260,y:H/2+Math.sin(i)*260,vx:0,vy:0}));
+const idx={}; nodes.forEach((n,i)=>idx[n.id]=i);
+const edges=D.edges.filter(e=>idx[e.from]!==undefined&&idx[e.to]!==undefined);
+document.getElementById('stat').textContent =
+  '节点 '+nodes.length+' ｜ 边 '+edges.length+' ｜ 类型分布 '+
+  Object.entries(D.stats.by_type).filter(x=>x[1]>0).map(x=>x[0]+':'+x[1]).join(' , ');
+const svg=document.getElementById('cv');
+const NS='http://www.w3.org/2000/svg';
+function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
+const gl=el('g',{}),gn=el('g',{}); svg.appendChild(gl);svg.appendChild(gn);
+const eline=edges.map(e=>el('line',{stroke: e.rel==='has_account'?'#3d4757':'#39404f','stroke-width':1.2}));
+eline.forEach(l=>gl.appendChild(l));
+const etxt=edges.map(e=>el('text',{class:'elab','text-anchor':'middle'}));
+const gnode=nodes.map(n=>{
+  const st=ST[n.type]||{color:'#888',r:14};
+  const g=el('g',{});
+  g.appendChild(el('circle',{r:st.r,fill:st.color,'fill-opacity':.82,stroke:'#0b0d12','stroke-width':2}));
+  const t=el('text',{class:'nlab',y:st.r+13}); t.textContent=n.label.length>22?n.label.slice(0,20)+'…':n.label;
+  g.appendChild(t); gn.appendChild(g); return g;});
+const tip=document.getElementById('tip');
+nodes.forEach((n,i)=>{const g=gnode[i];
+ g.onmousemove=ev=>{tip.style.display='block';tip.style.left=(ev.clientX+12)+'px';tip.style.top=(ev.clientY+12)+'px';
+  tip.innerHTML='<b>'+n.label+'</b><br>类型：'+(ST[n.type]?ST[n.type].label:n.type)+
+   '<br>'+Object.entries(n.props||{}).filter(x=>x[1]!==null&&x[1]!==''&&x[1]!==undefined)
+   .slice(0,6).map(x=>x[0]+'：'+x[1]).join('<br>')};
+ g.onmouseout=()=>tip.style.display='none';});
+function tick(){
+  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
+    let dx=nodes[j].x-nodes[i].x, dy=nodes[j].y-nodes[i].y, d=Math.hypot(dx,dy)||0.01;
+    if(d<420){const f=(420-d)*0.0016; nodes[i].vx-=dx/d*f*90; nodes[i].vy-=dy/d*f*90;
+      nodes[j].vx+=dx/d*f*90; nodes[j].vy+=dy/d*f*90;}}
+  edges.forEach((e,k)=>{const a=nodes[idx[e.from]],b=nodes[idx[e.to]];
+    const dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy)||0.01,f=(d-150)*0.006;
+    a.vx+=dx/d*f*60;a.vy+=dy/d*f*60;b.vx-=dx/d*f*60;b.vy-=dy/d*f*60;});
+  nodes.forEach(n=>{n.vx*=0.86;n.vy*=0.86;n.x+=n.vx*0.02;n.y+=n.vy*0.02;
+    n.x=Math.max(60,Math.min(W-60,n.x));n.y=Math.max(40,Math.min(H-40,n.y));});
+  edges.forEach((e,k)=>{const a=nodes[idx[e.from]],b=nodes[idx[e.to]],l=eline[k];
+    l.setAttribute('x1',a.x);l.setAttribute('y1',a.y);l.setAttribute('x2',b.x);l.setAttribute('y2',b.y);
+    const t=etxt[k]; if(!t.parentNode)gl.appendChild(t);
+    t.setAttribute('x',(a.x+b.x)/2);t.setAttribute('y',(a.y+b.y)/2-3);t.textContent=e.label;});
+  nodes.forEach((n,i)=>gnode[i].setAttribute('transform','translate('+n.x+','+n.y+')'));
+  requestAnimationFrame(tick);}
+tick();
+</script></body></html>
