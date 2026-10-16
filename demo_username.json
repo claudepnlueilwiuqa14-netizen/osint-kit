@@ -1,0 +1,668 @@
+[
+  {
+    "site": "GitHub",
+    "region": "intl",
+    "url": "https://api.github.com/users/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "found",
+    "evidence": "字段 login=claudepnlueilwiuqa14-netizen",
+    "ms": 2195
+  },
+  {
+    "site": "Archive.org",
+    "region": "intl",
+    "url": "https://archive.org/advancedsearch.php?q=uploader:claudepnlueilwiuqa14-netizen&fl%5B%5D=identifier&rows=1&output=json",
+    "status": 200,
+    "state": "not_found",
+    "evidence": "numFound=0",
+    "ms": 2387
+  },
+  {
+    "site": "Behance",
+    "region": "intl",
+    "url": "https://www.behance.net/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 14815
+  },
+  {
+    "site": "Bitbucket",
+    "region": "intl",
+    "url": "https://bitbucket.org/claudepnlueilwiuqa14-netizen/",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 2437
+  },
+  {
+    "site": "Bugcrowd",
+    "region": "intl",
+    "url": "https://bugcrowd.com/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 2849
+  },
+  {
+    "site": "CTFtime",
+    "region": "intl",
+    "url": "https://ctftime.org/user/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 4640
+  },
+  {
+    "site": "Chess.com",
+    "region": "intl",
+    "url": "https://api.chess.com/pub/player/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "接口 404：User \"claudepnlueilwiuqa14-netizen\" not found.",
+    "ms": 2112
+  },
+  {
+    "site": "Crates.io",
+    "region": "intl",
+    "url": "https://crates.io/api/v1/users/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "接口 404：Not Found",
+    "ms": 2337
+  },
+  {
+    "site": "Docker Hub",
+    "region": "intl",
+    "url": "https://hub.docker.com/v2/users/claudepnlueilwiuqa14-netizen/",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "接口 404：User not found",
+    "ms": 2085
+  },
+  {
+    "site": "Dribbble",
+    "region": "intl",
+    "url": "https://dribbble.com/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 1124
+  },
+  {
+    "site": "Flickr",
+    "region": "intl",
+    "url": "https://www.flickr.com/people/claudepnlueilwiuqa14-netizen/",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 5199
+  },
+  {
+    "site": "GitLab",
+    "region": "intl",
+    "url": "https://gitlab.com/api/v4/users?username=claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "not_found",
+    "evidence": "数组长度 0",
+    "ms": 2181
+  },
+  {
+    "site": "Gitee码云",
+    "region": "cn",
+    "url": "https://gitee.com/api/v5/users/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "接口 404：404 Not Found",
+    "ms": 3716
+  },
+  {
+    "site": "Goodreads",
+    "region": "intl",
+    "url": "https://www.goodreads.com/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 3858
+  },
+  {
+    "site": "HackerOne",
+    "region": "intl",
+    "url": "https://hackerone.com/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 2661
+  },
+  {
+    "site": "Keybase",
+    "region": "intl",
+    "url": "https://keybase.io/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 1341
+  },
+  {
+    "site": "Linktree",
+    "region": "intl",
+    "url": "https://linktr.ee/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 1261
+  },
+  {
+    "site": "Mastodon",
+    "region": "intl",
+    "url": "https://mastodon.social/api/v1/accounts/lookup?acct=claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "接口 404：Record not found",
+    "ms": 2101
+  },
+  {
+    "site": "Packagist",
+    "region": "intl",
+    "url": "https://packagist.org/users/claudepnlueilwiuqa14-netizen/",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 2271
+  },
+  {
+    "site": "SoundCloud",
+    "region": "intl",
+    "url": "https://soundcloud.com/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 3504
+  },
+  {
+    "site": "StackOverflow",
+    "region": "intl",
+    "url": "https://stackoverflow.com/users/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 1195
+  },
+  {
+    "site": "Steam",
+    "region": "intl",
+    "url": "https://steamcommunity.com/id/claudepnlueilwiuqa14-netizen/?xml=1",
+    "status": 200,
+    "state": "not_found",
+    "evidence": "命中不存在标记 '<error>'",
+    "ms": 2197
+  },
+  {
+    "site": "Strava",
+    "region": "intl",
+    "url": "https://www.strava.com/athletes/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 12250
+  },
+  {
+    "site": "Substack",
+    "region": "intl",
+    "url": "https://claudepnlueilwiuqa14-netizen.substack.com",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 2948
+  },
+  {
+    "site": "Twitter/X",
+    "region": "intl",
+    "url": "https://x.com/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 3372
+  },
+  {
+    "site": "V2EX",
+    "region": "cn",
+    "url": "https://v2ex.com/u/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 2679
+  },
+  {
+    "site": "Vimeo",
+    "region": "intl",
+    "url": "https://vimeo.com/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 1186
+  },
+  {
+    "site": "Wikipedia",
+    "region": "intl",
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=users&ususers=claudepnlueilwiuqa14-netizen&format=json",
+    "status": 200,
+    "state": "not_found",
+    "evidence": "users[0]={'name': 'Claudepnlueilwiuqa14-netizen', 'missing': ''}",
+    "ms": 2336
+  },
+  {
+    "site": "YouTube",
+    "region": "intl",
+    "url": "https://www.youtube.com/@claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 2331
+  },
+  {
+    "site": "什么值得买",
+    "region": "cn",
+    "url": "https://www.smzdm.com/u/claudepnlueilwiuqa14-netizen/",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 10107
+  },
+  {
+    "site": "博客园",
+    "region": "cn",
+    "url": "https://home.cnblogs.com/u/claudepnlueilwiuqa14-netizen/",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 9427
+  },
+  {
+    "site": "洛谷",
+    "region": "cn",
+    "url": "https://www.luogu.com.cn/user/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 3541
+  },
+  {
+    "site": "简书",
+    "region": "cn",
+    "url": "https://www.jianshu.com/u/claudepnlueilwiuqa14-netizen",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 2143
+  },
+  {
+    "site": "豆瓣",
+    "region": "cn",
+    "url": "https://www.douban.com/people/claudepnlueilwiuqa14-netizen/",
+    "status": 404,
+    "state": "not_found",
+    "evidence": "HTTP 404",
+    "ms": 3787
+  },
+  {
+    "site": "CSDN",
+    "region": "cn",
+    "url": "https://blog.csdn.net/claudepnlueilwiuqa14-netizen",
+    "status": 521,
+    "state": "unknown",
+    "evidence": "HTTP 521",
+    "ms": 5763
+  },
+  {
+    "site": "CodePen",
+    "region": "intl",
+    "url": "https://codepen.io/claudepnlueilwiuqa14-netizen",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 1060
+  },
+  {
+    "site": "DeviantArt",
+    "region": "intl",
+    "url": "https://www.deviantart.com/claudepnlueilwiuqa14-netizen",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 957
+  },
+  {
+    "site": "Facebook",
+    "region": "intl",
+    "url": "https://www.facebook.com/claudepnlueilwiuqa14-netizen",
+    "status": 400,
+    "state": "unknown",
+    "evidence": "HTTP 400",
+    "ms": 2875
+  },
+  {
+    "site": "HackerNews",
+    "region": "intl",
+    "url": "https://hn.algolia.com/api/v1/users/claudepnlueilwiuqa14-netizen",
+    "status": 500,
+    "state": "unknown",
+    "evidence": "接口 HTTP 500",
+    "ms": 2378
+  },
+  {
+    "site": "Instagram",
+    "region": "intl",
+    "url": "https://www.instagram.com/claudepnlueilwiuqa14-netizen/",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=无）",
+    "ms": 6096
+  },
+  {
+    "site": "Kaggle",
+    "region": "intl",
+    "url": "https://www.kaggle.com/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "遇人机验证/反爬壳（title=正在检查您的浏览器 - reCAPTCHA）",
+    "ms": 1409
+  },
+  {
+    "site": "Last.fm",
+    "region": "intl",
+    "url": "https://www.last.fm/user/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "遇人机验证/反爬壳（title=Client Challenge）",
+    "ms": 2310
+  },
+  {
+    "site": "LeetCode",
+    "region": "intl",
+    "url": "https://leetcode.com/u/claudepnlueilwiuqa14-netizen/",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 1049
+  },
+  {
+    "site": "LinkedIn",
+    "region": "intl",
+    "url": "https://www.linkedin.com/in/claudepnlueilwiuqa14-netizen",
+    "status": 999,
+    "state": "unknown",
+    "evidence": "HTTP 999（反爬/限速）",
+    "ms": 2424
+  },
+  {
+    "site": "Medium",
+    "region": "intl",
+    "url": "https://medium.com/@claudepnlueilwiuqa14-netizen",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 1341
+  },
+  {
+    "site": "Patreon",
+    "region": "intl",
+    "url": "https://www.patreon.com/claudepnlueilwiuqa14-netizen",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 1116
+  },
+  {
+    "site": "Pinterest",
+    "region": "intl",
+    "url": "https://www.pinterest.com/claudepnlueilwiuqa14-netizen/",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=无）",
+    "ms": 4959
+  },
+  {
+    "site": "PyPI",
+    "region": "intl",
+    "url": "https://pypi.org/user/claudepnlueilwiuqa14-netizen/",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "遇人机验证/反爬壳（title=Client Challenge）",
+    "ms": 5158
+  },
+  {
+    "site": "Reddit",
+    "region": "intl",
+    "url": "https://www.reddit.com/user/claudepnlueilwiuqa14-netizen/",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 3298
+  },
+  {
+    "site": "Roblox",
+    "region": "intl",
+    "url": "https://www.roblox.com/user.aspx?username=claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=无）",
+    "ms": 4220
+  },
+  {
+    "site": "SegmentFault",
+    "region": "cn",
+    "url": "https://segmentfault.com/u/claudepnlueilwiuqa14-netizen",
+    "status": 468,
+    "state": "unknown",
+    "evidence": "HTTP 468",
+    "ms": 10451
+  },
+  {
+    "site": "SourceForge",
+    "region": "intl",
+    "url": "https://sourceforge.net/u/claudepnlueilwiuqa14-netizen/profile/",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 2226
+  },
+  {
+    "site": "Spotify",
+    "region": "intl",
+    "url": "https://open.spotify.com/user/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=Spotify – Web Player）",
+    "ms": 3328
+  },
+  {
+    "site": "Telegram",
+    "region": "intl",
+    "url": "https://t.me/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=Telegram Messenger）",
+    "ms": 5749
+  },
+  {
+    "site": "TikTok",
+    "region": "intl",
+    "url": "https://www.tiktok.com/@claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=无）",
+    "ms": 2331
+  },
+  {
+    "site": "TryHackMe",
+    "region": "intl",
+    "url": "https://tryhackme.com/p/claudepnlueilwiuqa14-netizen",
+    "status": 429,
+    "state": "unknown",
+    "evidence": "HTTP 429（反爬/限速）",
+    "ms": 3265
+  },
+  {
+    "site": "Tumblr",
+    "region": "intl",
+    "url": "https://claudepnlueilwiuqa14-netizen.tumblr.com",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 1466
+  },
+  {
+    "site": "Twitch",
+    "region": "intl",
+    "url": "https://www.twitch.tv/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=Twitch）",
+    "ms": 2731
+  },
+  {
+    "site": "npm",
+    "region": "intl",
+    "url": "https://www.npmjs.com/~claudepnlueilwiuqa14-netizen",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "HTTP 403（反爬/限速）",
+    "ms": 2023
+  },
+  {
+    "site": "吾爱破解",
+    "region": "cn",
+    "url": "https://www.52pojie.cn/home.php?mod=space&username=claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=提示信息  - 吾爱破解 - 52pojie.cn）",
+    "ms": 9081
+  },
+  {
+    "site": "哔哩哔哩",
+    "region": "cn",
+    "url": "https://space.bilibili.com/claudepnlueilwiuqa14-netizen",
+    "status": 412,
+    "state": "unknown",
+    "evidence": "HTTP 412",
+    "ms": 3653
+  },
+  {
+    "site": "小红书",
+    "region": "cn",
+    "url": "https://www.xiaohongshu.com/user/profile/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=小红书 - 你的生活兴趣社区）",
+    "ms": 4049
+  },
+  {
+    "site": "开源中国",
+    "region": "cn",
+    "url": "https://my.oschina.net/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=OSCHINA - 开源 × AI · 开发者生态社）",
+    "ms": 6517
+  },
+  {
+    "site": "微博",
+    "region": "cn",
+    "url": "https://weibo.com/u/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "遇人机验证/反爬壳（title=Sina Visitor System）",
+    "ms": 7178
+  },
+  {
+    "site": "快手",
+    "region": "cn",
+    "url": "https://www.kuaishou.com/profile/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=快手）",
+    "ms": 11550
+  },
+  {
+    "site": "抖音",
+    "region": "cn",
+    "url": "https://www.douyin.com/user/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=无）",
+    "ms": 3658
+  },
+  {
+    "site": "掘金",
+    "region": "cn",
+    "url": "https://juejin.cn/user/posts?user_id=claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=无）",
+    "ms": 2305
+  },
+  {
+    "site": "百度贴吧",
+    "region": "cn",
+    "url": "https://tieba.baidu.com/home/main?un=claudepnlueilwiuqa14-netizen",
+    "status": 0,
+    "state": "unknown",
+    "evidence": "网络错误 ReadTimeout:HTTPSConnectionPool(host='tieba.baidu.com', port=443): Read ",
+    "ms": 8022
+  },
+  {
+    "site": "知乎",
+    "region": "cn",
+    "url": "https://www.zhihu.com/api/v4/members/claudepnlueilwiuqa14-netizen",
+    "status": 403,
+    "state": "unknown",
+    "evidence": "接口 HTTP 403（需认证/限流）",
+    "ms": 3550
+  },
+  {
+    "site": "网易云音乐",
+    "region": "cn",
+    "url": "https://music.163.com/#/user/home?id=claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=网易云音乐）",
+    "ms": 5199
+  },
+  {
+    "site": "虎扑",
+    "region": "cn",
+    "url": "https://bbs.hupu.com/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=虎扑社区-虎扑网）",
+    "ms": 9346
+  },
+  {
+    "site": "起点中文网",
+    "region": "cn",
+    "url": "https://my.qidian.com/user/claudepnlueilwiuqa14-netizen",
+    "status": 202,
+    "state": "unknown",
+    "evidence": "HTTP 202",
+    "ms": 3123
+  },
+  {
+    "site": "酷安",
+    "region": "cn",
+    "url": "https://www.coolapk.com/u/claudepnlueilwiuqa14-netizen",
+    "status": 567,
+    "state": "unknown",
+    "evidence": "HTTP 567",
+    "ms": 1893
+  },
+  {
+    "site": "阿里云开发者",
+    "region": "cn",
+    "url": "https://developer.aliyun.com/profile/claudepnlueilwiuqa14-netizen",
+    "status": 200,
+    "state": "unknown",
+    "evidence": "200 但为 SPA/通用壳，需 JS 渲染（title=无）",
+    "ms": 9071
+  }
+]
